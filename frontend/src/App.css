@@ -1,0 +1,40 @@
+.App {
+  background-color: #102d67;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-image: url("./images/pc-bg.png");
+}
+.content {
+  width: 100vw;
+  max-width: 466px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 12;
+}
+
+.header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.343);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+}
+@media screen and (min-width: 466px) {
+  .content {
+    border: solid #cca5b2ff 4px;
+  }
+}
+.loading-video {
+  width: min(100vw, 458px);
+  height: auto;
+}
+.split-line {
+  width: 100%;
+}

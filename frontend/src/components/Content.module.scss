@@ -1,0 +1,198 @@
+.wallet-connect-button {
+  height: 30px;
+  width: 98px;
+  margin-left: 4px;
+  position: relative;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/connect-wallet.png");
+}
+.wallet-connect-inner {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #35d4f4;
+  position: absolute;
+  width: 86px;
+  text-align: center;
+  left: 22px;
+  top: 6px;
+}
+.wallet-address {
+  display: flex;
+  align-items: center;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  margin-left: 4px;
+  color: #35d4f4;
+  font-size: 16px;
+  cursor: pointer;
+  img {
+    height: 29px;
+    margin-right: 2px;
+    width: auto;
+  }
+}
+.header-center {
+  display: flex;
+  align-items: center;
+  margin-left: 62px;
+  img {
+    width: 38px;
+    height: auto;
+    margin-right: 2px;
+  }
+  span {
+    font-weight: bold;
+    color: #fff289;
+    font-size: 17px;
+    -webkit-text-stroke: 0.43px #000000;
+  }
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  justify-content: flex-end;
+  position: absolute;
+  box-sizing: border-box;
+  top: 62px;
+  right: 0;
+  width: 175px;
+  height: 42px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-image: url("../../src/images/opreate-bg.png");
+  :global(.ant-dropdown .ant-dropdown-menu) {
+    padding: 0;
+    border-radius: 0;
+    li {
+      border-radius: 0;
+      width: 101px;
+      text-align: center;
+      color: #654c2f;
+      font-size: 12.5px;
+      font-weight: bold;
+    }
+    li:nth-child(even) {
+      background-color: #fed59fff;
+      &:hover {
+        background-color: rgba(254, 213, 159, 0.8);
+      }
+    }
+    li:nth-child(2n + 1) {
+      background-color: rgba(239, 185, 99);
+      &:hover {
+        background-color: rgba(239, 185, 99, 0.8);
+      }
+    }
+  }
+}
+.header-icon {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  &:active {
+    transform: scale(0.96);
+  }
+}
+.deposite-button {
+  position: absolute;
+  bottom: 48px;
+  left: 2px;
+  width: 86px;
+  height: 92px;
+  background-image: url("../images/Desposite.png");
+  background-size: cover;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  .inner-text {
+    margin-top: 51px;
+  }
+}
+.myReward-button {
+  width: 86px;
+  position: absolute;
+  bottom: 150px;
+  left: 2px;
+  background-image: url("../images/myReward.png");
+  background-size: cover;
+  height: 97px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  .inner-text {
+    margin-top: 63px;
+  }
+}
+.bg-video {
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.draw-button {
+  background-image: url("../images/draw-button.png");
+  width: 194px;
+  height: 68px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: min(16vw, 80px);
+  left: calc(min(50vw, 233px) - 98px);
+  cursor: pointer;
+  transition: 0.2s ease all;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 12px;
+  font-feature-settings: "kern";
+  text-indent: 12px;
+  font-size: 32px;
+  color: #ffffff;
+  &:active {
+    background-image: url("../images/draw-button-active.png");
+    transform: scale(0.98);
+  }
+}
+.count-ticket {
+  position: absolute;
+  width: 204px;
+  height: 87px;
+  background-image: url("../images/count-ticket.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: min(50vw, 230px);
+  left: calc(min(50vw, 233px) - 102px);
+  text-align: center;
+}
+.count-ticket-text {
+  color: #513026ff;
+  font-size: 29px;
+  font-weight: 800;
+  margin-top: 34px;
+  font-feature-settings: "kern";
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  width: 90%;
+  margin-left: 5%;
+  span {
+    width: 26px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.loading-img {
+  width: min(100vw, 466px);
+  height: auto;
+}
+.draw-text {
+  width: 90px;
+  margin-top: 6px;
+}

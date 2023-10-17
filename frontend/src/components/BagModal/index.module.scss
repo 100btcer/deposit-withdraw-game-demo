@@ -1,0 +1,234 @@
+.body-wrrape {
+  :global {
+    .ant-modal-content {
+      padding: 0;
+      border-radius: 0px;
+      width: 368px;
+      background-color: #fed8a2ff;
+    }
+  }
+}
+.close-icon {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.title-area {
+  width: 100%;
+  background-image: url("../../images/modalTitleBg.png");
+  background-size: contain;
+  height: 87px;
+  background-repeat: no-repeat;
+}
+.title-text {
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 25px;
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.tab-area {
+  margin-top: -16px;
+}
+.tab-card {
+  margin-left: 16px;
+  display: flex;
+  column-gap: 3px;
+  align-items: flex-end;
+}
+.card-item {
+  font-weight: bold;
+  font-size: 15px;
+  color: #f0daa3;
+  font-family: Microsoft YaHei;
+  background-color: #a07558ff;
+  height: 34px;
+  line-height: 30px;
+  width: 106px;
+  text-align: center;
+  cursor: pointer;
+}
+.active-item {
+  background-image: url("../../images//active-item.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 108px;
+  height: 41px;
+  line-height: 38px;
+  color: #4a3220;
+  font-size: 16.67px;
+  background-color: #fed8a2ff;
+}
+.tab-area-bottom {
+  width: 100%;
+  margin-top: -15px;
+  img {
+    width: 100%;
+  }
+}
+.tabRecord {
+  margin-top: -23px;
+}
+.list-title {
+  transform: translateY(0px);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100px 160px 1fr;
+  column-gap: 4px;
+  background-color: #fec782ff;
+  height: 33px;
+  font-size: 15px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0rem 1px 1px rgba(0, 0, 0, 0.75);
+  padding-right: 8px;
+  padding-left: 8px;
+  > div {
+    text-align: center;
+  }
+}
+.list-content {
+  height: 420px;
+  overflow-y: auto;
+}
+.list-content-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100px 160px 1fr;
+  column-gap: 4px;
+  height: 50px;
+  font-size: 16.67px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #654c2f;
+  padding-right: 8px;
+  padding-left: 8px;
+  img {
+    width: 23px;
+    height: auto;
+    transform: translateY(5px);
+  }
+  > div {
+    text-align: center;
+  }
+}
+.list-content-item:nth-child(even) {
+  background-color: #fec782ff;
+}
+.list-content-item:nth-child(2n + 1) {
+  background-color: #fee7b9ff;
+}
+.amount-number {
+  font-weight: 400;
+  color: #fff289;
+  line-height: 16px;
+  -webkit-text-stroke: 0.4px #000000;
+  font-size: 22px;
+}
+.card-item-wrape {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-item-p {
+  background-image: url("../../images/cardItemBg.png");
+  width: 112px;
+  height: 136px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.card-item-p-image {
+  position: absolute;
+  width: 104px;
+  height: auto;
+  left: 3px;
+  top: 3px;
+}
+.name-area {
+  position: absolute;
+  width: 104px;
+  height: 27px;
+  left: 3px;
+  top: 80px;
+  background-color: #00000085;
+  line-height: 27px;
+  text-align: center;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+}
+.count-area {
+  position: absolute;
+  width: 104px;
+  height: 27px;
+  left: 3px;
+  top: 107px;
+  line-height: 27px;
+  text-align: center;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+}
+.button-area {
+  background-image: url("../../images/cardItemButton.png");
+  width: 110px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  line-height: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 12px;
+  transition: 0.2s ease all;
+  &:active {
+    transform: scale(0.96);
+  }
+}
+.rewardList {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 12px;
+  padding: 0 6px 32px;
+  height: 400px;
+  align-content: flex-start;
+}
+.claim-text {
+  width: 60px;
+  height: fit-content;
+  margin-top: 6px;
+}
+.empty-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #99765c;
+  font-size: 32px;
+  padding-top: 12px;
+  font-weight: bold;
+  font-family: Microsoft YaHei;
+}
+.my-spining {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.empyty-icon {
+  width: 180px;
+  height: 218px;
+}

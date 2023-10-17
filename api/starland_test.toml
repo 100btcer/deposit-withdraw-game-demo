@@ -1,0 +1,64 @@
+[common]
+version = "0.0.1"
+is_debug = false
+log_level = "info"
+log_path = "./logs/starland.log"
+start_time = "2023-03-27"
+
+[ser]
+addr = ":8090"
+
+[mysql]
+database = ""
+host = ""
+log_level = ""
+max_idle_conns = 10
+max_open_conns = 20
+password = ""
+port = 3306
+user = ""
+
+[redis]
+redishost = ""
+sign_prefix = ""
+import_prefix = ""
+password = ""
+
+
+
+[jwt]
+issuer = ""
+secret_key = "hp"
+expiration_time = 680400
+
+[twitter]
+tweets_endpoint = "https://api.twitter.com/2/tweets/"
+user_endpoint = "https://api.twitter.com/2/users/"
+task_retweeted_by = "/retweeted_by"
+task_liking_users = "/liking_users"
+task_followers = "/followers"
+access_key = ""
+
+[email]
+subject = "Email verify"
+host = ""
+port = 587
+from_email = ""
+password = ""
+content = "Dear metapace user:\n Here is your email verification code:\n %v \n Please note: If it is not operated by yourself, your account may be stolen, please modify the account information immediately"
+
+[crontab]
+six_seconds_task = "*/6, *, *, *, *, ?"
+
+[rangers]
+chain_id = 9527
+rpc = "jsonrpc"
+mm = "0x1deFB5b39B9dACBF75479347B34Dd8d7011f6901"
+private_key = "私钥"
+ticket = "0x2c3b9ce8a9b40ec39a7b0cc4d3ccf2374b2fb4b8"
+
+[contract]
+imx = "0xAa09f16231661bc9c73f997b996bA071ab8c1193"
+rpg = "0xAa09f16231661bc9c73f997b996bA071ab8c1193"
+usdt = "0xAa09f16231661bc9c73f997b996bA071ab8c1193"
+coupon = "0xAa09f16231661bc9c73f997b996bA071ab8c1193"

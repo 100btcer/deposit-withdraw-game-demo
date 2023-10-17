@@ -1,0 +1,215 @@
+.body-wrrape {
+  :global {
+    .ant-modal-content {
+      padding: 0;
+      border-radius: 0px;
+      width: 368px;
+      background-color: #fed8a2ff;
+    }
+  }
+}
+.close-icon {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.title-area {
+  width: 100%;
+  background-image: url("../../images/modalTitleBg.png");
+  background-size: contain;
+  height: 87px;
+  background-repeat: no-repeat;
+}
+.title-text {
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  -webkit-text-stroke: 0.43px #7d5855;
+  img {
+    width: 36px;
+    margin: 0 4px;
+  }
+  span {
+    -webkit-text-stroke: 0.43px #7d5855;
+    color: #f3e682;
+    font-size: 18px;
+  }
+}
+.time-input {
+  width: 234px;
+  height: 52px;
+  background-image: url("../../images/inputTime.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -4px;
+  text-align: center;
+  input {
+    margin-top: 4px;
+    text-align: right;
+    margin-left: 1px;
+    background-color: rgba(254, 198, 130, 0);
+    border: none;
+    height: 36px;
+    width: 120px;
+    font-size: 26px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    letter-spacing: 0.9rem;
+    color: #573120;
+    &:focus {
+      outline: none;
+    }
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+  }
+}
+.blue-arrow {
+  width: 25px;
+  height: auto;
+  position: absolute;
+  cursor: pointer;
+}
+.left-blue-arrow {
+  left: 14px;
+  top: 12px;
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.right-blue-arrow {
+  transform: rotate(-180deg);
+  transform-origin: center;
+  right: 14px;
+  top: 8px;
+  &:active {
+    transform: scale(0.9) rotate(-180deg);
+  }
+}
+.ticket-tip {
+  font-size: 22px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #573120;
+  width: 100%;
+  text-align: center;
+  margin-top: 4px;
+}
+.ticket-area {
+  display: flex;
+  margin: 16px auto 0;
+  width: 100%;
+  justify-content: center;
+}
+.ticket-left {
+  background-color: #fee7b9ff;
+  width: 201px;
+  height: 39px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  font-size: 12.5px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #404040;
+
+  img {
+    width: 35px;
+    height: auto;
+    margin: 0 4px;
+  }
+  span {
+    margin-left: 12px;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #ead747;
+    -webkit-text-stroke: 0.23px #7d5855;
+  }
+}
+.ticket-right {
+  background-size: contain;
+  background-image: url("../../images/max-button.png");
+  width: 85px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.2s ease all;
+  &:active {
+    background-image: url("../../images/max-active.png");
+    transform: scale(0.96);
+  }
+}
+.max-ticket {
+  width: 42px;
+  height: 20px;
+  transform: translateY(-2px);
+}
+.draw-button {
+  margin: 32px auto;
+  background-image: url("../../images/bigain-draw.png");
+  background-size: contain;
+  width: 348px;
+  height: 76px;
+  text-align: center;
+
+  line-height: 60px;
+  transition: 0.2s ease all;
+  cursor: pointer;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+  img {
+    width: 35px;
+    margin: 0 4px;
+  }
+  span {
+    color: #f6e34d;
+    -webkit-text-stroke: 0.23px #000000;
+    margin-right: 4px;
+    font-size: 20px;
+  }
+}
+.draw-inner {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.draw-inner-cn {
+  background-image: url("../../../src/images/langImages/costdraw-cn.png");
+}
+
+.draw-inner-en {
+  background-image: url("../../../src/images/langImages/costdraw-en.png");
+}
+
+.draw-inner-kr {
+  width: 200px;
+  background-image: url("../../../src/images/langImages/costdraw-kr.png");
+}
